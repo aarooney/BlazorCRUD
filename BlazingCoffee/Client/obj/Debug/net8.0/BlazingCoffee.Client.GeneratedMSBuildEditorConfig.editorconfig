@@ -1,0 +1,103 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazingCoffee.Client
+build_property.RootNamespace = BlazingCoffee.Client
+build_property.ProjectDir = C:\Users\aidan.r\source\repos\blazor-ui\sample-applications\blazing-coffee\BlazingCoffee\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aidan.r\source\repos\blazor-ui\sample-applications\blazing-coffee\BlazingCoffee\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Host.razor]
+build_metadata.AdditionalFiles.TargetPath = SG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Pages/Information.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5mb3JtYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Pages/SalesReports/SalesByDateChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNSZXBvcnRzXFNhbGVzQnlEYXRlQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Avatar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEF2YXRhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Card.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/CardContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhcmRDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/CultureChooser.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1bHR1cmVDaG9vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Layouts/FullScreenLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcRnVsbFNjcmVlbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/NavMenu/DrawTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnVcRHJhd1RlbXBsYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/NavMenu/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnVcTG9naW5EaXNwbGF5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/NavMenu/SettingsChooser.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnVcU2V0dGluZ3NDaG9vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Rating.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJhdGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/Shared/Themes/ThemeChooser.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRoZW1lc1xUaGVtZUNob29zZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aidan.r/source/repos/blazor-ui/sample-applications/blazing-coffee/BlazingCoffee/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

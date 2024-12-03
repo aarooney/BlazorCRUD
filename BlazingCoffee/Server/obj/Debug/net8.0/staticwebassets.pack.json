@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Server\\wwwroot\\imports\\finserv.csv",
+      "PackagePath": "staticwebassets\\imports\\finserv.csv"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazingCoffee.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazingCoffee.Server.props",
+      "PackagePath": "build\\BlazingCoffee.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazingCoffee.Server.props",
+      "PackagePath": "buildMultiTargeting\\BlazingCoffee.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazingCoffee.Server.props",
+      "PackagePath": "buildTransitive\\BlazingCoffee.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

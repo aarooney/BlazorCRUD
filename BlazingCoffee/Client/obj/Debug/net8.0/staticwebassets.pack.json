@@ -1,0 +1,561 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\obj\\Debug\\net8.0\\compressed\\ycrz6rig3p.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\css\\main-dark.css",
+      "PackagePath": "staticwebassets\\css\\main-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\docs\\Index.razor.md",
+      "PackagePath": "staticwebassets\\docs\\Index.razor.md"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\docs\\ManageEmployees.razor.md",
+      "PackagePath": "staticwebassets\\docs\\ManageEmployees.razor.md"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\docs\\ManageProducts.razor.md",
+      "PackagePath": "staticwebassets\\docs\\ManageProducts.razor.md"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\docs\\Sales.razor.md",
+      "PackagePath": "staticwebassets\\docs\\Sales.razor.md"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\Sales.jpg",
+      "PackagePath": "staticwebassets\\img\\Sales.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\Schedule.jpg",
+      "PackagePath": "staticwebassets\\img\\Schedule.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\coffee.jpg",
+      "PackagePath": "staticwebassets\\img\\coffee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\bg.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\br.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\br.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\de.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\de.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\es.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\es.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\fr.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\fr.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\gb.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\gb.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\in.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\in.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\it.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\it.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\country-flags\\us.png",
+      "PackagePath": "staticwebassets\\img\\country-flags\\us.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\100.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\100.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\12.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\13.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\14.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\15.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\16.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\17.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\18.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\19.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\20.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\21.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\22.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\23.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\24.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\25.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\26.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\27.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\28.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\29.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\30.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\31.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\32.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\33.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\34.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\35.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\36.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\37.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\38.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\39.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\40.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\41.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\42.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\43.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\44.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\45.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\46.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\47.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\48.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\49.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\50.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\51.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\52.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\53.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\54.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\54.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\55.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\55.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\56.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\57.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\58.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\58.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\59.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\59.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\60.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\60.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\61.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\61.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\62.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\62.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\63.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\63.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\64.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\64.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\65.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\65.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\66.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\66.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\67.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\67.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\68.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\68.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\69.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\69.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\70.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\70.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\71.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\71.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\72.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\72.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\73.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\73.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\74.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\74.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\75.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\75.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\76.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\76.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\77.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\78.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\78.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\79.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\80.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\80.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\81.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\81.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\82.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\82.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\83.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\83.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\84.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\84.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\85.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\85.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\86.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\86.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\87.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\87.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\88.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\89.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\89.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\90.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\90.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\91.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\91.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\92.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\93.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\93.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\94.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\94.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\95.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\95.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\96.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\97.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\97.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\98.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\98.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\employees\\99.jpg",
+      "PackagePath": "staticwebassets\\img\\employees\\99.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\github-icon.svg",
+      "PackagePath": "staticwebassets\\img\\github-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\globe.svg",
+      "PackagePath": "staticwebassets\\img\\globe.svg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\header-bg.png",
+      "PackagePath": "staticwebassets\\img\\header-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\info-background.svg",
+      "PackagePath": "staticwebassets\\img\\info-background.svg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\products\\Accessory.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\Accessory.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\products\\ConsumerDrink.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\ConsumerDrink.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\products\\ConsumerFood.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\ConsumerFood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\products\\WholeProduct.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\WholeProduct.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\js\\themeChooser.js",
+      "PackagePath": "staticwebassets\\js\\themeChooser.js"
+    },
+    {
+      "Id": "C:\\Users\\aidan.r\\source\\repos\\blazor-ui\\sample-applications\\blazing-coffee\\BlazingCoffee\\Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazingCoffee.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazingCoffee.Client.props",
+      "PackagePath": "build\\BlazingCoffee.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazingCoffee.Client.props",
+      "PackagePath": "buildMultiTargeting\\BlazingCoffee.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazingCoffee.Client.props",
+      "PackagePath": "buildTransitive\\BlazingCoffee.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

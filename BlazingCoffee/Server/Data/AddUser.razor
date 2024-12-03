@@ -1,0 +1,42 @@
+﻿@page "/addemployee"
+@using BlazingCoffee.Shared.Models
+@inject CoffeeContext _context
+@* https://www.youtube.com/watch?v=Jifz9vSSKM4 *@
+
+
+<h3>Add New Employee</h3>
+
+<!-- Button to Add Employee -->
+<button class="btn btn-primary" @onclick="AddEmployee">Add Employee</button>
+
+@code {
+    // The event handler for the button click
+    private async Task AddEmployee()
+    {
+        // Create a new employee object
+        var newEmployee = new Employee
+            {
+                TeamId = 2,
+                FullName = "Future",
+                JobTitle = "Chief Savage Engineer",
+                Country = "FR",
+                IsOnline = false,
+                Rating = 2,
+                Target = 2,
+                Budget = 56575,
+                Phone = "(793) 1111111",
+                Address = "3 2nd Drive",
+                ImgId = 7,
+                Gender = "F"
+            };
+
+        // Add the new employee to the context
+        _context.Employees.Add(newEmployee);
+
+        // Save changes to the database
+        await _context.SaveChangesAsync();
+
+        // Optionally, log or perform some action after adding the employee
+        Console.WriteLine("New employee added to the database!");
+    }
+}
