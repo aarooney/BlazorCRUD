@@ -153,12 +153,16 @@
         await Grid.SetStateAsync(state);
     }
 
-
-    private void OnClickHandler()
+    private async Task OnClickHandler()
     {
+        // Simulating an asynchronous operation (just for example)
+        await Task.Delay(3000); // Waits asynchronously for 1 second (optional)
+
         // Writing to the Visual Studio Output or Terminal
         Console.WriteLine("Button clicked! This is logged in the terminal.");
     }
+
+   
 
     FilterDescriptor SingleTeamDescriptor() => new FilterDescriptor("TeamId", FilterOperator.IsEqualTo, 3);
 }
