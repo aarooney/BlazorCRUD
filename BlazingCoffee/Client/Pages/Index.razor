@@ -31,7 +31,7 @@
             <GridToolBarTemplate>
                 <GridSearchBox Width="150px"></GridSearchBox>
                 <span class="k-toolbar-spacer"></span>
-                <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.PlusOutline"></GridCommandButton>
+                <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.PlusOutline"></TelerikButton>
                 <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
                 <GridCommandButton Command="CsvExport" Icon="@SvgIcon.FileCsv">@Localizer["Grid_CsvExport"]</GridCommandButton>
             </GridToolBarTemplate>
@@ -151,6 +151,13 @@
         Page = 1;
 
         await Grid.SetStateAsync(state);
+    }
+
+
+    private void OnClickHandler()
+    {
+        // Writing to the Visual Studio Output or Terminal
+        Console.WriteLine("Button clicked! This is logged in the terminal.");
     }
 
     FilterDescriptor SingleTeamDescriptor() => new FilterDescriptor("TeamId", FilterOperator.IsEqualTo, 3);
