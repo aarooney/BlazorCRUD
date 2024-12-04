@@ -19,6 +19,8 @@
     {
         <TelerikGrid Data="employees"
         SelectionMode="GridSelectionMode.Multiple"
+        SelectedItems="@SelectedEmployees"
+        SelectedItemsChanged="@( (IEnumerable<Employee> newSelected) => OnRowSelect(newSelected) )"
         @ref="@Grid"
         Height="480px"
         Pageable="true"
@@ -112,6 +114,7 @@
 @code {
     private List<Employee> employees { get; set; } = new List<Employee>();
     TelerikGrid<Employee> Grid { get; set; }
+    private IEnumerable<Employee> SelectedEmployees { get; set; } = Enumerable.Empty<Employee>();
 
     public int Page { get; set; } = 1;
     public bool SingleTeamSelected { get; set; }
@@ -151,6 +154,15 @@
         Page = 1;
 
         await Grid.SetStateAsync(state);
+    }
+
+    protected void OnRowSelect(IEnumerable<Employee> employees)
+    {
+        // Update the SelectedItems collection manually.
+        // When using two-way binding, this happens automatically.
+        SelectedEmployees = employees;
+        Console.WriteLine("OnRowSelect is succesfully running");
+
     }
 
     private async Task OnClickHandler()
