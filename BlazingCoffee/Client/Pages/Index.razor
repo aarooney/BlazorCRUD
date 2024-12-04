@@ -161,6 +161,14 @@
         // Update the SelectedItems collection manually.
         // When using two-way binding, this happens automatically.
         SelectedEmployees = employees;
+        foreach (var employee in employees)
+        {
+            Console.WriteLine(employee.Id);  // Access employee properties
+        }
+
+        //var response =  Http.DeleteAsync($"api/employees/{SelectedEmployees[0].Id}");
+        //SelectedEmployees[0].Id
+
         Console.WriteLine("OnRowSelect is succesfully running");
 
     }
