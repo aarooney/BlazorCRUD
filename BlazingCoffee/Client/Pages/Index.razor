@@ -156,6 +156,8 @@
     private async Task OnClickHandler()
     {
         // Simulating an asynchronous operation (just for example)
+        var response = await Http.DeleteAsync($"api/employees/{employees[0].Id}");
+
         await Task.Delay(3000); // Waits asynchronously for 1 second (optional)
 
         // Writing to the Visual Studio Output or Terminal
