@@ -152,14 +152,28 @@
         Console.WriteLine("Editing row: ", editedRow);
     }
 
-    private void HandleSave(GridCommandEventArgs args)
+    private async Task HandleSave(GridCommandEventArgs args)
     {
-        var updatedRow = args.Item; // The row that was edited and will be saved
-        Console.WriteLine("Saving changes for row: ", updatedRow);
+        var updatedEmployee = args.Item as Employee; // Assuming the row is of type Employee
 
-        // You can access and inspect the updated data here
-        // Optionally, perform further validation or update the data source
+        if (updatedEmployee != null)
+        {
+            // Send PUT request to update employee in the database
+            var response = await Http.PutAsJsonAsync($"api/Employees/{updatedEmployee.Id}", updatedEmployee);
+            employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+            if (response.IsSuccessStatusCode)
+            {
+                // Successfully updated
+                Console.WriteLine("Employee updated successfully");
+            }
+            else
+            {
+                // Handle error response
+                Console.WriteLine("Error updating employee");
+            }
+        }
     }
+
 
 
     private void OnCellRender(GridCellRenderEventArgs args)
