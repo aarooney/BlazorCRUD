@@ -156,17 +156,18 @@
         await Grid.SetStateAsync(state);
     }
 
-    protected void OnRowSelect(IEnumerable<Employee> employees)
+    private async Task OnRowSelect(IEnumerable<Employee> employees)
     {
         // Update the SelectedItems collection manually.
         // When using two-way binding, this happens automatically.
         SelectedEmployees = employees;
-        foreach (var employee in employees)
+        foreach (var employee in SelectedEmployees)
         {
             Console.WriteLine(employee.Id);  // Access employee properties
+            var response = await Http.DeleteAsync($"api/employees/{employee.Id}");
         }
 
-        //var response =  Http.DeleteAsync($"api/employees/{SelectedEmployees[0].Id}");
+        employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
         //SelectedEmployees[0].Id
 
         Console.WriteLine("OnRowSelect is succesfully running");
@@ -174,20 +175,38 @@
     }
 
     private async Task OnClickHandler()
+
     {
-        // Simulating an asynchronous operation (just for example)
-        var response = await Http.DeleteAsync($"api/employees/{employees[0].Id}");
-        employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
-        // var state = Grid.GetState();
+        if (SelectedEmployees.Count() > 0)
+        {
+            foreach (var employee in SelectedEmployees)
+            {
+                Console.WriteLine(employee.Id);  // Access employee properties
+                var response = await Http.DeleteAsync($"api/employees/{employee.Id}");
+            }
+            employees =  (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
 
-        // await Grid.SetStateAsync(state);
-      
 
 
-        await Task.Delay(3000); // Waits asynchronously for 1 second (optional)
+        }
+        else
+        {
 
-        // Writing to the Visual Studio Output or Terminal
-        Console.WriteLine("Button clicked! This is logged in the terminal.");
+
+            // Simulating an asynchronous operation (just for example)
+            var response = await Http.DeleteAsync($"api/employees/{employees[0].Id}");
+            employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+            // var state = Grid.GetState();
+
+            // await Grid.SetStateAsync(state);
+
+
+
+            await Task.Delay(3000); // Waits asynchronously for 1 second (optional)
+
+            // Writing to the Visual Studio Output or Terminal
+            Console.WriteLine("Button clicked! This is logged in the terminal.");
+        }
     }
 
    
