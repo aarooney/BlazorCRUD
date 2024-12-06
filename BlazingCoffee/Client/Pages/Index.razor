@@ -11,7 +11,7 @@
     }
 
     .SaveButtonVisible {
-    height: 10px;
+    height: 30px;
     visibility: visible;
     }
 </style>
@@ -45,6 +45,10 @@
         Page="@Page"
         Groupable="true"
         ShowColumnMenu="true">
+
+            <GridToolBarTemplate>
+                <GridCommandButton Command="MyToolbarCommand" OnClick="@MyCommandFromToolbar" Icon="@SvgIcon.InfoCircle">Fire My Command</GridCommandButton>
+            </GridToolBarTemplate>
 
             <GridToolBarTemplate>
                 <GridSearchBox Width="150px"></GridSearchBox>
@@ -130,9 +134,8 @@
                 </GridColumn>
                 <GridCommandColumn Width="100px">
                     <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil">Edit</GridCommandButton>
-                    <GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true" >Update</GridCommandButton>
                 </GridCommandColumn>
-                <GridCommandColumn Width="200px" >
+                <GridCommandColumn Width="100px"  >
                     @* <GridCommandButton Command="Add"  Icon="@SvgIcon.PlusCircle">Add</GridCommandButton> *@
 
 
@@ -153,7 +156,7 @@
 </CardContainer>
 
 @code {
-    private string buttonClass = "SaveButtonVisible";
+    private string buttonClass = "SaveButtonHidden";
     private string buttonVisibility = "visibility:hidden"; // Initially hidden
 
     private bool isAddingNewRow = false;
@@ -216,7 +219,7 @@
         // employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
         buttonVisibility = "visibility: visible"; // Change visibility to visible
 
-        buttonClass = "SaveButtonHidden";
+        buttonClass = "SaveButtonVisible";
     }
  
     private void MyCommandFromToolbar(GridCommandEventArgs args)
@@ -231,12 +234,12 @@
     {
         // Assuming that args.Item contains the new employee.
         var newEmployee = args.Item as Employee;
-
+        buttonClass = "SaveButtonHidden";
         if (newEmployee != null)
         {
             try
             {
-                newEmployee.Id = 6000;
+                newEmployee.Id = 8000;
                 newEmployee.TeamId = 2;
                 // Send a POST request using HttpClient to the API endpoint for creating an employee.
                 var response = await Http.PostAsJsonAsync<Employee>("api/employees", newEmployee);
