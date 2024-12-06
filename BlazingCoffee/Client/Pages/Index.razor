@@ -116,12 +116,12 @@
                     <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil">Edit</GridCommandButton>
                     <GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true" >Update</GridCommandButton>
                 </GridCommandColumn>
-                <GridCommandColumn Width="200px">
-                    <GridCommandButton Command="Add"  Icon="@SvgIcon.PlusCircle">Add</GridCommandButton>
-                    
-                    
+                <GridCommandColumn Width="200px" >
+                    @* <GridCommandButton Command="Add"  Icon="@SvgIcon.PlusCircle">Add</GridCommandButton> *@
+
+
                     <GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true" >Save</GridCommandButton>
-                    
+
 
                 </GridCommandColumn>
                 <GridCommandColumn Width="100px">
@@ -190,28 +190,55 @@
     private bool isEditing = false;
     private string buttonText = "Add";
 
+    // private async Task HandleCreate(GridCommandEventArgs args)
+    // {
+    //     var newEmployee = args.Item as Employee;
+    //     var response = await Http.PostAsJsonAsync("api/employees", newEmployee);
+    //     employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+
+
+    // }
     private async Task HandleCreate(GridCommandEventArgs args)
     {
-        // var newEmployee = args.Item as Employee;
+        // Assuming that args.Item contains the new employee.
+        var newEmployee = args.Item as Employee;
 
-
-        // if (isEditing)
-        // {
-        //     Send data to database on second click
-        //     var response = await Http.PostAsJsonAsync("api/Employees", newEmployee);
-        //     employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
-        //     buttonText = "Add"; Reset button label
-        //     isEditing = false;  Reset editing state
-        // }
-        // else
-        // {
-        //     Change button to "Save" and enter editing mode
-        //     buttonText = "Save";
-        //     isEditing = true;
-        // }
-        isAddingNewRow = true;
-
+        if (newEmployee != null)
+        {
+            try
+            {
+                newEmployee.Id = 4000;
+                newEmployee.TeamId = 2;
+                // Send a POST request using HttpClient to the API endpoint for creating an employee.
+                var response = await Http.PostAsJsonAsync<Employee>("api/employees", newEmployee);
+                
+                // Check if the request was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    // Optionally: You can refresh the grid or show a success message
+                    // Get the created employee object (optional)
+                   //ar createdEmployee = await response.Content.ReadFromJsonAsync<Employee>();
+                    employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+                    // Handle success (e.g., update grid, display message, etc.)
+                    Grid.Rebind();
+                }
+                else
+                {
+                    // Handle failure (e.g., show error message)
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(errorMessage);
+                    // Handle error logic here (show message, etc.)
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., network issues, etc.)
+                // You can log the error or show a user-friendly message
+                Console.Error.WriteLine($"Error occurred while creating employee: {ex.Message}");
+            }
+        }
     }
+
 
 
 
