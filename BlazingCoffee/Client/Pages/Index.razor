@@ -24,6 +24,7 @@
         EditMode="@GridEditMode.Inline"
         OnEdit="@HandleEdit"
         OnUpdate="@HandleSave"
+        OnCreate="@HandleCreate"
         @ref="@Grid"
         Height="480px"
         Pageable="true"
@@ -38,8 +39,9 @@
                 <span class="k-toolbar-spacer"></span>
                 <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton>
                 <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
-                                
+
                 <GridCommandButton Command="CsvExport" Icon="@SvgIcon.FileCsv">@Localizer["Grid_CsvExport"]</GridCommandButton>
+                <GridCommandButton Command="Add" Icon="@SvgIcon.PlusCircle">Add</GridCommandButton>
             </GridToolBarTemplate>
             <GridColumns>
                 <GridCheckboxColumn Width="45px"
@@ -114,18 +116,29 @@
                     <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil">Edit</GridCommandButton>
                     <GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true" >Update</GridCommandButton>
                 </GridCommandColumn>
-                <GridCommandColumn Width="100px">
-                    <GridCommandButton Command="Add" Icon="@SvgIcon.Pencil">Add</GridCommandButton>
+                <GridCommandColumn Width="200px">
+                    <GridCommandButton Command="Add"  Icon="@SvgIcon.PlusCircle">Add</GridCommandButton>
+                    
+                    
+                    <GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true" >Save</GridCommandButton>
+                    
+
                 </GridCommandColumn>
                 <GridCommandColumn Width="100px">
                     <GridCommandButton Command="Delete" Icon="@SvgIcon.Pencil" OnClick="@OnClickHandler">Delete</GridCommandButton>
                 </GridCommandColumn>
+
+
+
+
             </GridColumns>
         </TelerikGrid>
     }
 </CardContainer>
 
 @code {
+    private bool isAddingNewRow = false;
+
     private List<Employee> employees { get; set; } = new List<Employee>();
     TelerikGrid<Employee> Grid { get; set; }
     private IEnumerable<Employee> SelectedEmployees { get; set; } = Enumerable.Empty<Employee>();
@@ -173,6 +186,34 @@
             }
         }
     }
+
+    private bool isEditing = false;
+    private string buttonText = "Add";
+
+    private async Task HandleCreate(GridCommandEventArgs args)
+    {
+        // var newEmployee = args.Item as Employee;
+
+
+        // if (isEditing)
+        // {
+        //     Send data to database on second click
+        //     var response = await Http.PostAsJsonAsync("api/Employees", newEmployee);
+        //     employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+        //     buttonText = "Add"; Reset button label
+        //     isEditing = false;  Reset editing state
+        // }
+        // else
+        // {
+        //     Change button to "Save" and enter editing mode
+        //     buttonText = "Save";
+        //     isEditing = true;
+        // }
+        isAddingNewRow = true;
+
+    }
+
+
 
 
 
