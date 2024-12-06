@@ -4,7 +4,17 @@
 @inject HttpClient Http
 @using Telerik.Blazor.Services
 @using Telerik.SvgIcons;
+<style>
+    .SaveButtonHidden{
+    height:10px;
+    visibility:hidden;
+    }
 
+    .SaveButtonVisible {
+    height: 10px;
+    visibility: visible;
+    }
+</style>
 <CardContainer>
     <CardHeader>
         <div class="card-header-wrapper">
@@ -25,6 +35,7 @@
         OnEdit="@HandleEdit"
         OnUpdate="@HandleSave"
         OnCreate="@HandleCreate"
+        OnAdd="@HandleAdd"
         @ref="@Grid"
         Height="480px"
         Pageable="true"
@@ -34,12 +45,17 @@
         Page="@Page"
         Groupable="true"
         ShowColumnMenu="true">
+
             <GridToolBarTemplate>
                 <GridSearchBox Width="150px"></GridSearchBox>
                 <span class="k-toolbar-spacer"></span>
-                <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton>
-                <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
+                @* <div class="SaveButtonVisible"><GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true">Save</GridCommandButton></div> *@
+                <GridCommandButton Command="MyToolbarCommand" OnClick="@MyCommandFromToolbar" Icon="@SvgIcon.InfoCircle">Fire My Command</GridCommandButton>
 
+                <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton>
+                <div class="@buttonClass">
+                    <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
+                </div>
                 <GridCommandButton Command="CsvExport" Icon="@SvgIcon.FileCsv">@Localizer["Grid_CsvExport"]</GridCommandButton>
                 <GridCommandButton Command="Add" Icon="@SvgIcon.PlusCircle">Add</GridCommandButton>
             </GridToolBarTemplate>
@@ -137,6 +153,9 @@
 </CardContainer>
 
 @code {
+    private string buttonClass = "SaveButtonVisible";
+    private string buttonVisibility = "visibility:hidden"; // Initially hidden
+
     private bool isAddingNewRow = false;
 
     private List<Employee> employees { get; set; } = new List<Employee>();
@@ -190,14 +209,24 @@
     private bool isEditing = false;
     private string buttonText = "Add";
 
-    // private async Task HandleCreate(GridCommandEventArgs args)
-    // {
-    //     var newEmployee = args.Item as Employee;
-    //     var response = await Http.PostAsJsonAsync("api/employees", newEmployee);
-    //     employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+    private async Task HandleAdd(GridCommandEventArgs args)
+    {
+        // var newEmployee = args.Item as Employee;
+        // var response = await Http.PostAsJsonAsync("api/employees", newEmployee);
+        // employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+        buttonVisibility = "visibility: visible"; // Change visibility to visible
 
+        buttonClass = "SaveButtonHidden";
+    }
+ 
+    private void MyCommandFromToolbar(GridCommandEventArgs args)
+    {
+        //note - the args.Item object is null because the command item is not associated with an item
 
-    // }
+        Console.WriteLine("ERROR");
+
+    }
+
     private async Task HandleCreate(GridCommandEventArgs args)
     {
         // Assuming that args.Item contains the new employee.
@@ -207,7 +236,7 @@
         {
             try
             {
-                newEmployee.Id = 4000;
+                newEmployee.Id = 6000;
                 newEmployee.TeamId = 2;
                 // Send a POST request using HttpClient to the API endpoint for creating an employee.
                 var response = await Http.PostAsJsonAsync<Employee>("api/employees", newEmployee);
