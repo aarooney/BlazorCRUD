@@ -1,6 +1,20 @@
-﻿<GridCommandButton Command="Delete" Icon="@SvgIcon.Pencil" OnClick="@OnClickHandler">Delete</GridCommandButton>
+﻿@inject HttpClient Http
+@using Telerik.SvgIcons;
+
+
+<GridCommandButton Command="Delete" Icon="@SvgIcon.Pencil" OnClick="@OnClickHandler">Delete</GridCommandButton>
 
 @code {
+    
+    [Parameter]
+    public IEnumerable<Employee> SelectedEmployees { get; set; } = Enumerable.Empty<Employee>();
+    //CAN THESE NOT BE PRIVATE? WHY DO THEY HAVE TO BE PUBLIC
+    [Parameter]
+    public List<Employee> employees { get; set; } = new List<Employee>();
+
+    [Parameter]
+    public EventCallback<List<Employee>> OnEmployeesUpdated { get; set; }
+
 
     private async Task OnClickHandler()
 
@@ -35,7 +49,10 @@
             // Writing to the Visual Studio Output or Terminal
             Console.WriteLine("Button clicked! This is logged in the terminal.");
         }
+        await OnEmployeesUpdated.InvokeAsync(employees);
     }
+
+    
 
 
 }
