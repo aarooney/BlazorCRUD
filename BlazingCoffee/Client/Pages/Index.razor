@@ -57,7 +57,8 @@
                 @* <div class="SaveButtonVisible"><GridCommandButton Command="Save" Icon="@SvgIcon.Save" ShowInEdit="true">Save</GridCommandButton></div> *@
                 <GridCommandButton Command="MyToolbarCommand" OnClick="@MyCommandFromToolbar" Icon="@SvgIcon.InfoCircle">Fire My Command</GridCommandButton>
 
-                <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton>
+                @* <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton> *@
+                <Delete SelectedEmployees=SelectedEmployees employees=employees OnEmployeesUpdated="HandleEmployeesUpdated"></Delete>
                 <div class="@buttonClass">
                     <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
                 </div>
@@ -329,40 +330,7 @@
 
     }
 
-    private async Task OnClickHandler()
-
-    {
-        if (SelectedEmployees.Count() > 0)
-        {
-            foreach (var employee in SelectedEmployees)
-            {
-                Console.WriteLine(employee.Id);  // Access employee properties
-                var response = await Http.DeleteAsync($"api/employees/{employee.Id}");
-            }
-            employees =  (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
-
-
-
-        }
-        else
-        {
-
-
-            // Simulating an asynchronous operation (just for example)
-            var response = await Http.DeleteAsync($"api/employees/{employees[0].Id}");
-            employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
-            // var state = Grid.GetState();
-
-            // await Grid.SetStateAsync(state);
-
-
-
-           
-
-            // Writing to the Visual Studio Output or Terminal
-            Console.WriteLine("Button clicked! This is logged in the terminal.");
-        }
-    }
+    
 
    
 
