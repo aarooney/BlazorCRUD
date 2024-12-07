@@ -11,7 +11,7 @@
     }
 
     .SaveButtonVisible {
-    height: 30px;
+    height: 38px;
     visibility: visible;
     }
 </style>
@@ -239,7 +239,7 @@
         {
             try
             {
-                newEmployee.Id = 8000;
+                newEmployee.Id = 9000;
                 newEmployee.TeamId = 2;
                 // Send a POST request using HttpClient to the API endpoint for creating an employee.
                 var response = await Http.PostAsJsonAsync<Employee>("api/employees", newEmployee);

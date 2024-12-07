@@ -9,7 +9,7 @@
 </ul>
 <footer>
     <ul role="menubar" aria-orientation="vertical" class="k-drawer-items">
-        <li class="k-drawer-item k-drawer-separator"></li>
+        <li class="k-drawer-item k-drawer-separator"></li>l
         @foreach (DrawerItem item in Data.Where(item => item.Group == "ext"))
         {
             <DrawerNavLink href="@item.Url" Text="@item.Text" Icon="@item.Icon" />
