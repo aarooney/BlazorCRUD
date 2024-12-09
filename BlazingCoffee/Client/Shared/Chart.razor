@@ -1,0 +1,97 @@
+﻿
+
+@inject HttpClient Http
+
+@page "/chart/donut-chart"
+
+@using Telerik.Blazor
+
+<TelerikChart>
+    <ChartTitle Text="Workforce Nationality"></ChartTitle>
+    <ChartLegend Visible="true" Position="ChartLegendPosition.Top"></ChartLegend>
+
+    <ChartSeriesItems>
+        <ChartSeries Type="ChartSeriesType.Donut"
+                     Data="@Data"
+                     Field="@nameof(ModelData.Value)"
+                     CategoryField="@nameof(ModelData.Category)">
+            <ChartSeriesTooltip Visible="true" Context="item">
+                <Template>
+                    @item.Percentage.ToString("P")
+                </Template>
+            </ChartSeriesTooltip>
+            <ChartSeriesLabels Position="ChartSeriesLabelsPosition.OutsideEnd"
+                               Visible="true"
+                               Background="transparent"
+                               Template="#= dataItem.Category # - #= percentage*100 #%">
+            </ChartSeriesLabels>
+        </ChartSeries>
+    </ChartSeriesItems>
+</TelerikChart>
+
+@code {
+    public class ModelData
+    {
+        public string Category { get; set; }
+        public int Value { get; set; }
+    }
+    public List<Employee> employees { get; set; } = new List<Employee>();
+    
+    public List<ModelData> Data = new List<ModelData>()
+    {
+        new ModelData()
+        {
+            Category = "Brazil",
+            Value = 35
+        },
+        new ModelData()
+        {
+            Category = "France",
+            Value = 15
+        },
+        new ModelData()
+        {
+            Category = "United Kingdom",
+            Value = 25
+        },
+        new ModelData()
+        {
+            Category = "United States",
+            Value = 15
+        },
+        new ModelData()
+        {
+            Category = "Germany",
+            Value = 5
+        },
+        new ModelData()
+        {
+            Category = "Spain",
+            Value = 5
+        }
+    };
+    
+
+
+
+    
+    protected override async Task OnInitializedAsync()
+    {
+        employees = (await Http.GetFromJsonAsync<Employee[]>("api/employees")).ToList();
+        await Task.Delay(1000);
+        Console.WriteLine(Data[0].Category);
+
+    
+        Console.WriteLine("Hello, World!");
+
+
+       
+    }
+
+
+
+
+
+
+
+}
