@@ -1,0 +1,11 @@
+﻿
+    /* Scoped CSS for the Counter component */
+    /* Style for the Increment button */
+
+h1 {
+    color: red;
+}
+
+.increment-btn{
+    background-color : green;
+}

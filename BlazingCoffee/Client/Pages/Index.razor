@@ -2,8 +2,8 @@
 @inherits CoffeeComponentBase
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject HttpClient Http
-@using Telerik.Blazor.Services
 @using Telerik.SvgIcons;
+
 <style>
     .SaveButtonHidden{
     height:10px;
@@ -15,7 +15,6 @@
     visibility: visible;
     }
 </style>
-<Counter></Counter>
 <CardContainer>
     <CardHeader>
         <div class="card-header-wrapper">
@@ -28,6 +27,7 @@
     </CardHeader>
     @if (employees != null)
     {
+        <Chart></Chart>
         <TelerikGrid Data="employees"
         SelectionMode="GridSelectionMode.Multiple"
         SelectedItems="@SelectedEmployees"
@@ -58,7 +58,16 @@
                 <GridCommandButton Command="MyToolbarCommand" OnClick="@MyCommandFromToolbar" Icon="@SvgIcon.InfoCircle">Fire My Command</GridCommandButton>
 
                 @* <TelerikButton OnClick="@OnClickHandler" Icon="@SvgIcon.MinusCircle">Delete</TelerikButton> *@
+
+
+
+
+
                 <Delete SelectedEmployees=SelectedEmployees employees=employees OnEmployeesUpdated="HandleEmployeesUpdated"></Delete>
+
+
+
+
                 <div class="@buttonClass">
                     <GridCommandButton Command="ExcelExport" Icon="@SvgIcon.FileExcel">@Localizer["Grid_ExcelExport"]</GridCommandButton>
                 </div>
